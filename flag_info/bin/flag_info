@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/flag_info'
+
+FlagInfo::CLI.new.call
