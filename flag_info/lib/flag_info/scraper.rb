@@ -13,6 +13,10 @@ doc = Nokogiri::HTML(open(site))
 binding.pry
 
 puts doc
+# doc.css("ul.flag-grid").first
+# Name_of_Country = doc.css("ul.flag-grid").first.css("span").first.text 
+# Link to page = doc.css("ul.flag-grid a").first.attributes["href"].value
+
 # if the result is an empty array [], the content you want is probably being loaded with javascript. Once you are sure you are getting data, comment out `puts doc` as it's probably going to return you a big mess (that's a good thing!)
 
 # Now let's start looking at this `doc`. 
